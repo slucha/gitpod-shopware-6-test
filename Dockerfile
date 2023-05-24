@@ -1,5 +1,8 @@
 FROM gitpod/workspace-full
 
+# Change your version here
+RUN sudo update-alternatives --set php $(which php7.4)
+
 USER root
 
 RUN apt-get update && \
